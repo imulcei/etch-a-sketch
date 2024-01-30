@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'EtchAsketch';
+    src: url('font/EASTRIAL.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 95vh;
+}
+
+.etch {
+    padding: 5px;
+    background-color: #c00000;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#title {
+    text-align: center;
+    font-family: 'EtchAsketch';
+    font-size: 50px;
+    color: #be9d72;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 30px);
+}
+
+.grid-div {
+    width: 30px;
+    height: 30px;
+    background-color: #ece1e1;
+}
+
+.grid-div:hover {
+    background-color: #7b7b7b;
+}
+
+#buttons {
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.round-button {
+    width: 80px;
+    height: 80px;
+    background-color: #fbfbfb;
+    border: 4px #d0d0d0 double;
+    border-radius: 100%;
+}
+
+.param-btn {
+    width: 100px;
+    padding: 10px 0px;
+    border: 1px solid #7b7b7b;
+    border-radius: 5px;
+    background-color: #ece1e1;
+}
